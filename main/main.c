@@ -8,5 +8,10 @@ int main(void)
     HAL_Init();
     SystemClock_Config();
 
-    volatile mcp2515_t mcp2515;
+    mcp2515_t mcp2515;
+    mcp2515_initialize(&mcp2515, 0, 0);
+
+    while (1) {
+        ;
+    }
 }
